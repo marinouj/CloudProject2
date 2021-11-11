@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .links {
+    @apply hover:text-purple;
+  }
+  .basic_page {
+    @apply bg-gray p-8 h-9/10 text-white;
+  }
+  .form_theme {
+    @apply bg-white bg-opacity-20 rounded  px-8 pt-6 pb-8 mb-4;
+  }
+  .header_style {
+    @apply bg-gray h-1/10 w-full;
+  }
+  .input_fields {
+    @apply block bg-white bg-opacity-60 placeholder-gray shadow appearance-none border rounded w-full py-2 px-3 text-gray leading-tight focus:bg-white focus:bg-opacity-95 focus:outline-none;
+  }
+  .input_field_titles {
+    @apply block uppercase tracking-wide text-xs font-bold mb-2;
+  }
+  .buttons {
+    @apply bg-purple hover:bg-dark_purple text-white font-bold py-2 px-4 rounded;
+  }
+  .table_outline {
+    @apply border border-purple h-12;
+  }
+
+  .blurred_square {
+    @apply z-10 bg-white bg-opacity-50  backdrop-filter backdrop-blur-sm rounded-2xl;
+  }
+  .section_rule {
+    @apply h-4/5 items-center justify-center text-center;
+  }
+  .main_text {
+    @apply text-xs xl:text-xl lg:text-lg sm:text-base;
+  }
+  .black_heading {
+    @apply text-2xl xl:text-5xl lg:text-4xl sm:text-3xl text-black font-bold text-left;
+  }
+}
